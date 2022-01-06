@@ -4,6 +4,7 @@ if (!process.env.NEXTAUTH_URL) {
     "\x1b[0m",
     "NEXTAUTH_URL environment variable is not set."
   );
+  //? why do we have alternative environment variables?
   if (process.env.URL) {
     process.env.NEXTAUTH_URL = process.env.URL;
     console.warn(
